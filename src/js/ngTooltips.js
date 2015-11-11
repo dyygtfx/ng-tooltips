@@ -126,10 +126,8 @@
                         if (!$scope.isTooltipEmpty()) {
 
                             theTooltip.css('visibility', 'visible');
-
                             height = thisElement[0].offsetHeight;
                             width = thisElement[0].offsetWidth;
-
                             //get tooltip dimension
                             theTooltipHeight = theTooltip[0].offsetHeight;
                             theTooltipWidth = theTooltip[0].offsetWidth;
@@ -358,14 +356,12 @@
                       });
                     }
                     if (attr.tooltipContent) {
-
                         attr.$observe('tooltipContent', function observeTooltipContent(val) {
                             $scope.content = val;
                             $scope.initTooltip(side);
                       });
                     }
                     if (attr.tooltipHtml) {
-
                         attr.$observe('tooltipHtml', function observeTooltipHtml(val) {
                             $scope.html = val;
                             $scope.initTooltip(side);
